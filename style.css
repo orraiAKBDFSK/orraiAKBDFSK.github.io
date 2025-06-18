@@ -1,0 +1,278 @@
+:root {
+    --primario: #673AB7;
+    --primario-oscuro: #4527A0;
+    --primario-claro: #9575CD;
+    --secundario: #F3F0FF;
+    --texto: #333333;
+    --texto-claro: #EEEEEE;
+}
+
+body {
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--texto);
+    background-color: var(--secundario);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    max-width: 500px;
+    height: auto;
+}
+
+
+header {
+    background-color: var(--primario);
+    color: white;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.card img {
+    max-width: 60px;
+    margin-bottom: 1rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background-color: white;
+    color: var(--primario);
+    padding: 0.7rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--primario-claro);
+    color: white;
+}
+
+nav {
+    background-color: var(--primario-oscuro);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0.7rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    margin: 0.5rem 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--primario-claro);
+}
+
+section.container {
+    margin: 2rem auto;
+}
+
+section h2 {
+    color: var(--primario);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.section-img {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+footer {
+    background-color: var(--primario-oscuro);
+    color: var(--texto-claro);
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+}
+
+footer a {
+    color: var(--texto-claro);
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--primario-claro);
+}
+
+/* LOGIN SECTION */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 1rem;
+    background-color: var(--secundario);
+    min-height: 100vh;
+}
+
+.login-box {
+    background-color: white;
+    padding: 2rem 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-box h2 {
+    color: var(--primario);
+    margin-bottom: 1.5rem;
+}
+
+.login-box label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--texto);
+    font-weight: bold;
+    text-align: left;
+}
+
+
+.login-box input[type="email"],
+.login-box input[type="password"] {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.btn-login {
+    background-color: var(--primario);
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: var(--primario-claro);
+}
+
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.2rem;
+    font-size: 0.9rem;
+}
+
+.login-options label {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--texto);
+}
+
+.login-options a {
+    color: var(--primario);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.login-options a:hover {
+    text-decoration: underline;
+}
+
+.register-option {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.register-option a {
+    color: var(--primario);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-option a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 0.5rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-box {
+        padding: 1.5rem;
+    }
+}
